@@ -13,6 +13,9 @@ ADD . /root/TeamUltroid
 
 WORKDIR "/root/TeamUltroid"
 
+ARG PORT
+EXPOSE ${PORT:-3000}
+
 RUN ./ultroid install
 
 # start the bot.
